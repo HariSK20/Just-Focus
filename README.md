@@ -7,8 +7,10 @@ First create Virtual ENV and start it
 
 	python3 -m venv env
 	source env/bin/activate
+	
+Install Python dependencies
 
-Then install dependencies in requirements.txt
+	python3 -m pip install -r requirements.txt
 
 then 
 
