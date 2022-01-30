@@ -21,3 +21,11 @@ Created by
 
 	npm install
 	npm start
+
+### TODO
+
+- [x] OpenCV Face Detection
+- [x] OpenCV Face Pose estimation
+- [ ] Desktop recorder
+- [x] Python - Node Communication
+
