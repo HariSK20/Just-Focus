@@ -1,14 +1,14 @@
 {
   "name": "Just Focus",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Desktop App which observes whether the user is paying attention during meetings and if they are not: it would record the meeting/ takes notes for the user and write it to a file",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Sidharth R, Anirudh Suresh, Sidharth PA, Harishankar S Kumar",
+  "author": "Sidharth R, Anirudh Suresh, Sidharth PA, Harishankar S",
   "license": "ISC",
   "dependencies": {
     "electron": "^16.0.8",
