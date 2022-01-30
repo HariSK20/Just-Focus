@@ -1,5 +1,5 @@
 {
-  "name": "attention_check",
+  "name": "Just Focus",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,9 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sidharth R, Anirudh Suresh, Sidharth PA, Harishankar S Kumar",
   "license": "ISC",
   "dependencies": {
-    "electron": "^16.0.8"
+    "electron": "^16.0.8",
+    "live-server": "^1.2.1"
   }
 }

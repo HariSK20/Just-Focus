@@ -7,34 +7,19 @@ const { spawn } = require('child_process');
 // const kill = require('tree_kill');
 
 let child = null;
-// const sio = io();
-
-// function set_up_sever()
-// {
-// 	sio.on('connect', () => {
-// 		console.log("connected");
-// 		sio.emit('eventname', {});
-// 	});
-
-// 	sio.on('eventname2', (data) => {
-// 		console.log(data)
-// 	});
-
-// 	sio.on('disconnect', () => {
-// 		console.log("disconnected");
-// 	});
-// }
 
 function createChild()
 {
 	child = spawn("python3", ['./python/timed.py']);
+  	if(child == null)
+		child = spawn("python", ['./python/timed.py']);
 }
 
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 900,
     webPreferences: {
       preload: path.join(path.join(__dirname, 'electron'), 'renderer.js'),
 	  contextIsolation: true,
