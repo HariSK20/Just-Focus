@@ -178,7 +178,7 @@ function attention_check()
 
 function toggle_button_label()
 {
-	if(document.getElementById("start_button").innerHTML == "START")
+	if(state == 0)
 		document.getElementById("start_button").innerHTML = "STOP";
 	else
 	{
@@ -190,10 +190,13 @@ function toggle_button_label()
 function start_attention_check()
 {
 	// toggle_button_label();
-	state = 0;
+	if(state == -1)
+		state = 0;
+	else
+		state = 4;	
 	check_timeout_function();
 	// console.log("clickerd");
-	// toggle_button_label();
+	toggle_button_label();
 	
 	document.getElementById("status").innerHTML = "starting";
 	fetch(`http://127.0.0.1:5001/stop`, {method: "POST"});
@@ -219,7 +222,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	  replaceText(`${dependency}-version`, process.versions[dependency])
 	}
 
-	state = 0;
+	state = -1;
 	getSources();
 	// check_timeout_function();
 	// document.getElementById("start_button").addEventListener("click", start_attention_check);
