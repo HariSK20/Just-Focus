@@ -37,3 +37,4 @@ Creating a Python Virtual env is Recommended
 - [x] Python-Node Communication (Python and JS)
 - [ ] Desktop recorder (JS)
 - [ ] Speech to Text (Python)
+- [ ] Upgrade Flask server
