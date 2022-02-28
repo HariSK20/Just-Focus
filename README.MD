@@ -1,5 +1,5 @@
 # Just Focus
-A Desktop App which observes whether the user is paying attention during meetings and if they are not: it would record the meeting/ takes notes for the user and write it to a file.
+An Electron based Desktop App which observes whether the user is paying attention during meetings and if they are not: it would record the meeting/ takes notes for the user and write it to a file.
 
 Created for [.hack()](https://hack22.devfolio.co/) 2022
 
